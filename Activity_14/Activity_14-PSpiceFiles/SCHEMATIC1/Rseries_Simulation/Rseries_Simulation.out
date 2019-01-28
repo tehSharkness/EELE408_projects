@@ -1,0 +1,101 @@
+
+**** 03/25/14 20:29:55 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Rseries_Simulation"  [ D:\DROPBOX\SCHOOL\EELE408\Activity_14\Activity_14-PSpiceFiles\SCHEMATIC1\Rseries_Simu
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Rseries_Simulation.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ACTIVITY_14
+R_R1         N00291 N00298  22.7m TC=0,0 
+R_R2         N00298 N00325  1.84 TC=0,0 
+R_R3         N00302 N00298  1.84 TC=0,0 
+R_R4         N00298 N00302  1.84 TC=0,0 
+R_R5         N00310 N00298  1.84 TC=0,0 
+R_R6         N00298 N00310  1.84 TC=0,0 
+R_R7         N00318 N00298  1.84 TC=0,0 
+R_R8         N00332 N00325  9.3 TC=0,0 
+R_R9         N00349 N00302  9.3 TC=0,0 
+R_R10         N00364 N00310  9.3 TC=0,0 
+R_R11         N00388 N00318  9.3 TC=0,0 
+R_R12         N00332 N00349  114m TC=0,0 
+R_R13         N00349 N00364  114m TC=0,0 
+R_R14         N00364 N00388  114m TC=0,0 
+R_R15         N00388 0  114m TC=0,0 
+V_V1         N00291 0 1Vdc
+
+**** RESUMING Rseries_Simulation.cir ****
+.END
+
+**** 03/25/14 20:29:55 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Rseries_Simulation"  [ D:\DROPBOX\SCHOOL\EELE408\Activity_14\Activity_14-PSpiceFiles\SCHEMATIC1\Rseries_Simu
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00291)    1.0000 (N00298)     .9922 (N00302)     .9108 (N00310)     .9091     
+
+(N00318)     .8348 (N00325)     .8444 (N00332)     .0972 (N00349)     .0881     
+
+(N00364)     .0688 (N00388)     .0393 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -3.447E-01
+
+    TOTAL POWER DISSIPATION   3.45E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 03/25/14 20:29:55 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Rseries_Simulation"  [ D:\DROPBOX\SCHOOL\EELE408\Activity_14\Activity_14-PSpiceFiles\SCHEMATIC1\Rseries_Simu
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

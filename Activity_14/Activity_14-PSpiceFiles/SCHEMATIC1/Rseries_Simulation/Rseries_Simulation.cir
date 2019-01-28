@@ -1,0 +1,18 @@
+** Profile: "SCHEMATIC1-Rseries_Simulation"  [ D:\DROPBOX\SCHOOL\EELE408\Activity_14\Activity_14-PSpiceFiles\SCHEMATIC1\Rseries_Simulation.sim ] 
+
+** Creating circuit file "Rseries_Simulation.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END
